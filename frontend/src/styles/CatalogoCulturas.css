@@ -1,0 +1,158 @@
+.catalogo-page {
+    min-height: 100vh;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #F7F3ED;
+    font-family: sans-serif;
+    cursor: default; 
+    padding-top: 50px;
+}
+
+.catalogo-container {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.catalogo-container h3 {
+    color: #255220;
+    font-size: 22px;
+    margin: 16px 0 16px 18px;
+}
+
+.barra-busca-cultura {
+    position: absolute;
+    top: 16px;
+    right: 32px;
+    background-color: #FDF9F3;
+    border: 1px solid #00000042;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.barra-busca-cultura input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 13px;
+    color: #000000c2;
+    margin: 5px;
+}
+
+.icone-busca-cultura {
+    color: #000000c2;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.button-buscar-cultura {
+    border: none;
+    border-radius: 20px;
+    background-color: #255220;
+    font-size: 12px;
+    color: #FDF9F3;
+    margin: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+    padding: 5px 12px;
+}
+
+.filtro-cultura {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 10px 0 0 18px;
+    flex-wrap: wrap;
+}
+
+.span-filtro {
+    font-size: 13px;
+    color: #000000a1;
+}
+
+.filtro-cultura button {
+    border: none;
+    border-radius: 20px;
+    padding: 6px 18px;
+    background-color: #DFE4DF;
+    color: #000000ad;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.filtro-cultura button:hover {
+    background-color: #c9d4c9;
+}
+
+.filtro-cultura button.ativo {
+    background-color: #255220;
+    color: #DFE4DF;
+}
+
+.catalogo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(177px, 1fr)); /* mudar a altura */
+    gap: 30px;
+    margin: 25px 18px 30px 18px;;
+}
+
+.cultura-card {
+    width: 177px;
+    background-color: #0639060F;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 2px 6px #00000025;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.cultura-card:hover {
+    transform: translateY(-2px);
+    background-color: #0639061a;
+} 
+
+.cultura-card h4 {
+    color: #255220;
+    font-size: 14px;
+    margin: 7px 0;
+}
+
+.cultura-card img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    display: block;
+}
+
+.cultura-card p {
+    font-size: 12px;
+    font-weight: bold;
+    color: #255220f5;
+    margin: 4px 0 4px;
+}
+
+.info-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 6px 0 10px;
+    font-size: 10px;
+    color: #255220f5;
+}
+
+.info-card span {
+    flex: 1;
+    text-align: center;
+}
+
+.info-card span:first-child {
+    border-right: 1px solid #255220f5;
+}

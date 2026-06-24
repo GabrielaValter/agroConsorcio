@@ -1,0 +1,228 @@
+.login-page {
+   min-height: 100vh;
+   display: flex;
+   flex-direction: column;
+   background-color: #F7F3ED;
+   font-family: sans-serif;
+   cursor: default; 
+}
+
+.login-container {
+    flex: 1;
+    display: flex;
+    padding-top: 50px;
+}
+
+/* Lado esquerdo */
+
+.login-image {
+    flex: 1;
+    position: relative;
+    background-image: url("../assets/fundo_login.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background-color: #4C7848D4;
+}
+
+.info-login,
+.info-sugestao {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    max-width: 520px;
+    color: #FFF;
+}
+
+.info-login {
+    margin-bottom: 30px;;
+}
+
+.info-login h2 {
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+/* Card de sugestão */
+
+.info-sugestao {
+    background-color: #4C7848B3;
+    border: 1px solid #102c0c48;
+    border-radius: 20px;
+    padding: 24px;
+}
+
+.info-sugestao h3 {
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+.text {
+    font-size: 14px;
+}
+
+.button-sugestao {
+    width: fit-content;
+    margin: 20px auto 0 auto;
+    font-size: 12px;
+    font-weight: bold;
+    color: #FFF;
+    background-color: #255220;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 40px;
+    cursor: pointer;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.button-sugestao:hover {
+    background-color: #1c4018;
+}
+
+/* Lado direito */
+
+.login-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    text-align: center;
+}
+
+.login-box {
+    width: 100%;
+    max-width: 420px;
+}
+
+.login-box h2 {
+    font-size: 22px;
+    color: #255220;
+    margin-bottom: 8px;
+}
+
+.text-right {
+    font-size: 12px;
+    color: #313131c9;
+    margin-bottom: 20px;
+}
+
+.text-right1 {
+    font-size: 10px;
+    font-weight:bolder;
+    text-align: left;
+    margin-bottom: 8px; 
+}
+
+.login-box form {
+    display: flex; 
+    flex-direction: column;
+}
+
+.login-box input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #D6D6D6;
+    border-radius: 10px;
+    background-color: #FFF;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+.login-box input:focus {
+    border: 1px solid #255220;
+    outline: none;
+}
+
+/* .login-box input {
+    background-color: #FDF9F3 !important;
+} */
+
+.input-senha {
+    position: relative;
+    width: 100%;
+}
+
+.input-senha input {
+    padding-right: 40px;
+}
+
+.button-eye {
+    position: absolute;
+    top: 35%;
+    right: 12px;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: #6b6b6b;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-login {
+    width: 100%;
+    margin-top: 10px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #FFF;
+    background-color: #255220;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 40px;
+    cursor: pointer;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.button-login:hover {
+    background-color: #1c4018;
+}
+
+/* Responsividade */
+@media (max-width: 500px) {
+
+    .login-container {
+        flex-direction: column-reverse;
+    }
+
+    .login-image {
+        min-height: 400px;
+    }
+
+    .info-login h2 {
+        font-size: 1.7rem;
+    }
+
+    .login-content {
+        padding: 30px 20px;
+    }
+
+    .login-box {
+        max-width: 100%;
+    }
+    
+    .info-sugestao h3 {
+        text-align: center;
+    }
+}

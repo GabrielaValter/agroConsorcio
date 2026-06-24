@@ -1,0 +1,44 @@
+.campo-senha {
+    position: relative;
+    width: 100%;
+}
+
+.campo-senha input {
+    padding-right: 40px;
+}
+
+.campo-senha button {
+    position: absolute;
+    top: 35%;
+    right: 12px;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: #6b6b6b;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Responsividade */
+@media (max-width: 580px) {
+    .cadastro-container {
+        justify-content: flex-start;
+    }
+
+    .botoes-formulario {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .button-cancelar,
+    .button-salvar {
+        width: 100%;
+        min-width: unset;
+        padding: 10px 16px;
+    }
+}

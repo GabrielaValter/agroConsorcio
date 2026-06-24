@@ -1,0 +1,222 @@
+.informacao-page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #F7F3ED;
+    font-family: sans-serif;
+    cursor: default;
+    padding-top: 50px;
+}
+
+.informacao-container {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.informacao-container h3 {
+    color: #255220;
+    font-size: 22px;
+    margin: 16px 18px;
+}
+
+.informacao-card {
+    margin: 0 18px 20px;
+    background-color: rgba(6, 57, 6, 0.103);
+    border-radius: 12px;
+    padding: 22px;
+}
+
+.info-topo {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    margin-bottom: 16px;
+}
+
+.img-info img {
+    width: 130px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.info-topo h3 {
+    min-width: 130px;
+    margin: 0;
+    color: #255220;
+    font-size: 20px;
+}
+
+.info-grid {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px 20px;
+}
+
+.info-grid p,
+.bloco-texto p {
+    margin: 0;
+    font-size: 12px;
+    color: #000000cc;
+}
+
+.info-grid strong,
+.bloco-texto strong,
+.periodo-plantio strong {
+    color: #255220;
+}
+
+.bloco-texto {
+    margin-bottom: 10px;
+}
+
+.periodo-plantio {
+    margin-top: 12px;
+}
+
+.periodo-plantio > strong {
+    font-size: 13px;
+}
+
+.regioes-plantio {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin-top: 8px;
+}
+
+.regioes-plantio span {
+    display: block;
+    color: #000000cc;
+    font-size: 12px;
+}
+
+.lista-consorcios-cultura {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin: 4px 15px 40px;
+}
+
+.titulo-grupo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #255220;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 8px 0 2px;
+}
+
+.titulo-grupo::before,
+.titulo-grupo::after {
+    content: "";
+    height: 1px;
+    background-color: #255220;
+    flex: 1;
+}
+
+.titulo-grupo.nao-recomendadas {
+    color: #8b1a1a;
+}
+
+.titulo-grupo.nao-recomendadas::before,
+.titulo-grupo.nao-recomendadas::after {
+    background-color: #8b1a1a;
+}
+
+.card-consorcio-cultura {
+    min-height: 82px;
+    border-radius: 14px;
+    padding: 14px 22px;
+    display: flex;
+    align-items: center;
+    gap: 22px;
+}
+
+.card-consorcio-cultura.recomendada {
+    background-color: #DDE8D5;
+}
+
+.card-consorcio-cultura.nao-recomendada {
+    background-color: #ebd8d8b2;
+}
+
+.culturas-consorcio,
+.cultura-associada {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.culturas-consorcio {
+    min-width: 230px;
+}
+
+.culturas-consorcio img {
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.sinal-mais {
+    color: #255220;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.info-consorcio {
+    flex: 1;
+}
+
+.info-consorcio h4 {
+    color: #255220;
+    font-size: 17px;
+    margin: 0 0 6px;
+}
+
+.info-consorcio p {
+    margin: 0;
+    font-size: 13px;
+    color: #000;
+}
+
+.button-justificativa {
+    border: none;
+    border-radius: 16px;
+    background-color: #255220;
+    color: #fff;
+    padding: 8px 14px;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.button-justificativa:hover {
+    background-color: #1c4018;
+}
+
+.button-nao-recomendado {
+    background-color: #8b1a1a;
+}
+
+.button-nao-recomendado:hover {
+    background-color: #6f1212;
+}
+
+.mensagem {
+    text-align: center;
+    color: #255220;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+.erro {
+    color: #b00020;
+    font-size: 12px;
+    margin: 0 18px 10px;
+}

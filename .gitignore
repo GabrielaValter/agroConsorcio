@@ -1,0 +1,16 @@
+# Backend
+backend/target/
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+front-agro-consorcio/
+
+# IDE
+.vscode/
+.idea/
+
+# Logs e ambiente
+*.log
+.env

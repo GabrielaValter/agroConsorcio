@@ -1,0 +1,37 @@
+.barra-busca-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.filtrar-tipo {
+    margin-left: auto;
+    display: flex;
+    gap: 18px;
+    align-items: center;
+}
+
+.filtrar-tipo button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    color: #444;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 0;
+}
+
+.filtrar-tipo button:hover {
+    color: #255220;
+}
+
+.filtrar-tipo .ativo {
+    color: #255220;
+    font-weight: bold;
+}
+
+.radio-filtro {
+    font-size: 12px;
+}

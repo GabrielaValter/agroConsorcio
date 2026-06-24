@@ -1,0 +1,51 @@
+/* etapa 1 */
+.etapa1-grid {
+    max-width: 100%;
+    align-self: center;
+
+    display: grid;
+    grid-template-columns: 1.35fr 0.9fr;
+    gap: 40px;
+    align-items: start;
+}
+
+.coluna-esquerda,
+.coluna-direita {
+    display: flex;
+    flex-direction: column;
+}
+
+.coluna-direita label,
+.coluna-direita input {
+    max-width: 200px;
+}
+
+
+/* etapa 2 */
+
+/* etapa 3 */
+.meses {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+}
+
+/* .regiao-meses {
+    background-color: #F7F3ED;
+    border: 1px solid #d1d1c2;
+    border-radius: 16px;
+    padding: 14px;
+} */
+
+.regiao-meses h5 {
+    margin: 0 0 12px;
+    color: #255220;
+    font-size: 16px;
+}
+
+.regiao-meses select {
+    margin-bottom: 10px;
+}
+
+
+/* botoẽs */
